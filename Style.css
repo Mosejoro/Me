@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 2px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+}
+
+h1  {
+    font-family:Jost-800-heavy;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
+}
+.Logo{
+    width: 20%;
+}
+header img{
+    width: 5rem;
+    height: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+header ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: border-bottom ease-in 0.5s;
+    transition: font-size ease 0.4s;
+    outline: none;
+
+}
+header ul li a:hover {
+    border: none;
+    padding: 20px;
+    border-bottom: 2px solid wheat;
+    font-size: 1.5rem;
+}
+header button{
+    padding: 14px 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size:1.5rem ;
+    font-weight: 800;
+}
+#First{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 231, 215, 0.671);
+    gap: 10%;
+}
+.Intro{
+    padding: 10%;
+    flex-wrap: wrap;
+}
+.Intro h1, #About h1,h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size:50px;
+    color: #2f4f4f;
+}
+.Intro a, #About a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 20px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    transition:background-color ease 0.9s;
+}
+.Intro a:hover, #About a:hover{
+    background-color: #001f3f;
+    color: orange;
+    transition:background-color ease 0.9s;
+    transition:color ease 0.9s;
+}
+.image{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.image img, .Imgg img{
+    border: none;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+main button{
+    margin-top: 4rem;
+    padding: 24px 20px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color:wheat;
+    border: none;
+    border-radius: 10px;
+}
+#About{
+    display: flex;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    transition:linear 0.7s;
+}
+.Imgg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Project{
+    display: flex;
+    gap: 30%;
+    margin-top: 50px;
+}
+.Pro{
+    display: flex;
+    gap: 10px;
+}
+.Pro div p{
+    margin-top: 5px;
+}
+span{
+    color: orange;
+    font-weight: 800;
+}
+#Service{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Tools{
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Options{
+    width: 50%;
+    padding: 2%;
+    border: 1px orange solid;
+    border-radius: 10px;
+    transition: background ease 0.2s;
+}
+.Options:hover{
+    background-color: rgba(253, 154, 6, 0.336);
+}
+#Experience{
+    background-color: rgba(252, 231, 215, 0.671);
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.Education{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.Info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.Content{
+    padding: 10px;
+    border: 2px solid #E8E8c4;
+    border-radius: 10px;
+    height: 10%;
+    transition: background-color ease-in 0.1s;
+    overflow: hidden;
+}
+.Content:hover{
+    background-color: white;
+    box-shadow: 2px 2px 9px whitesmoke;
+}
+#Contact{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(252, 231, 215, 0.671);
+}
+form{
+   width: 50%;
+}
+.Contact{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+input{
+    width: 365px;
+    height: 70px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    border: 1px orange solid;
+    border-radius: 7px;
+}
+.Details{
+    margin-top: 10px;
+}
+
+.Cont{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items:center;
+    padding: 10px;
+    margin-bottom: 1px;
+    gap: 20px;
+}
+.Co img{
+    background-color: orange;
+    padding: 10px;
+    margin-left: 50px;
+    width: 50px;
+    height: auto;
+}
+.Nt{
+    padding-top: 10px;
+}
+
+form button{
+    margin-top: 10px;
+    padding: 24px 30px;
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    transition:background ease-in 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover{
+    background-color: orange;
+    padding: 23px 29px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid orange;
+
+}
+footer{
+  background-color: #f1f1f1;
+  justify-content: space-around;
+  align-items: center;
+}
+.main{
+    display: flex;
+    padding: 5%;
+    gap: 10%;
+    text-align: center;
+}
+.Divo img{
+    margin: 20px;
+    width: 30%;
+    flex-direction: column;
+}
+footer .main img{
+    width: 10%;
+}
+.Divl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+.Divl ul{
+    display: flex;
+    flex-direction: column;
+}
+.Divl a, .Divl li{
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Divt img{
+    margin-bottom: 20px;
+    border: orange solid 1px;
+    background-color: transparent;
+    border: none;
+    height: 10%;
+
+}
+.Divt img:hover{
+    border-radius: 5px;
+    background-color: #001f3f
+}
+
+.Divmg{
+    gap: 20px;
+}
+.Address{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+}
+.Address img{
+    background-color: orange;
+}
+@media screen and (max-width:767px) {
+    header{
+        justify-content: space-evenly;
+    }
+    .but button{
+        display:none
+    }
+    .Intro, #Service, #Contact{
+        padding: 7%;
+    }
+    #About{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        gap: 50px;
+
+    }
+    .Project{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .Tools{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-self: center;
+    }
+    .Options{
+        flex-wrap: wrap;
+        padding: 5%;
+        margin: auto;
+        border: 1px orange solid;
+        border-radius: 10px;
+        transition: background ease 0.2s;
+        width: 80%;
+    }
+    .Options:hover{
+        background-color: rgba(253, 154, 6, 0.336);
+    }
+    input{
+        width: 150%;
+    }
+    form button{
+        margin-left: 50%;
+    }
+    .Contact{
+        display: flex;
+        gap: 10%;
+    }
+    #Details{
+        width: 50%;
+    }
+}
+@media screen and (max-width:543px) {
+    header{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+   #First, #About{
+    display: flexbox;
+    flex-direction: column-reverse;
+    height: 160vh;
+    text-align: center;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+}
+.Details{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    margin-left: -50px;
+}
+.Link{
+    display: none;
+}
+}
+
